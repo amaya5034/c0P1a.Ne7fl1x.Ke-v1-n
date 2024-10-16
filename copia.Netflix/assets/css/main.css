@@ -1,0 +1,131 @@
+/* Estilos generales */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    background-color: #141414;
+    color: white;
+}
+
+header {
+    background-color: #111;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 120px;
+}
+
+#navbar nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#search-bar {
+    padding: 5px;
+    background-color: #333;
+    border: none;
+    color: white;
+    font-size: 14px;
+}
+
+#search-bar::placeholder {
+    color: #999;
+}
+
+/* Banner principal */
+#main-banner {
+    position: relative;
+    height: 60vh;
+    background-color: black;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    z-index: 1;
+}
+
+.banner-content {
+    padding: 60px;
+    z-index: 2;
+    max-width: 500px;
+}
+
+#banner-title {
+    font-size: 48px;
+    margin: 0 0 20px;
+}
+
+#banner-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.banner-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.banner-buttons button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+#play-btn {
+    background-color: #e50914;
+    color: white;
+}
+
+/* Secciones de categorías */
+.category-section {
+    padding: 20px;
+}
+
+.category-section h2 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.carousel img {
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+    transform: scale(1.05);
+}
